@@ -1,0 +1,6 @@
+spring:
+  application:
+    name: EventMeetup
+
+server:
+  port: 8081
