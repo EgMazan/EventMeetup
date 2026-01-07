@@ -1,6 +1,15 @@
 spring:
   application:
     name: EventMeetup
-
+  datasource:
+    url: jbdc:postgresql://localhost:5432/eventmeetup
+  jpa:
+    hibernate:
+      ddl-auto: update
+    show-sql: true
+    properties:
+      hibernate:
+        format_sql: true
+    database-platform: org.hibernate.dialect.PostgreSQLDialect
 server:
   port: 8081

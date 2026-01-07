@@ -1,4 +1,4 @@
-package com.egorsproject.EventMeetup;
+package com.egorsproject.eventmeetup;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
