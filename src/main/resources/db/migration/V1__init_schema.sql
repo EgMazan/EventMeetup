@@ -6,4 +6,8 @@ create table users(
     updated_at timestamp not null
 );
 insert into users(id, email, name, created_at, updated_at)
-values (1,'test@mail.com','test User',now(),now());
+VALUES (1,'test1mail.com','user1',now(),now()),
+       (2,'test2mail.com','user2',now(),now()),
+       (3,'test3mail.com','user3',now(),now());
+
+
