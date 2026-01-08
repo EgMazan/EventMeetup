@@ -12,9 +12,13 @@ public class User {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private long id;
+    @Column(nullable = false, unique = true)
     private String email;
+    @Column(nullable = false)
     private String name;
+    @Column(name = "created_at", nullable = false)
     private LocalDateTime createdAt;
+    @Column(name = "updated_at", nullable = false)
     private LocalDateTime updatedAt;
     @PrePersist
     protected void onCreate(){
@@ -25,6 +29,7 @@ public class User {
     protected void onUpdate(){
         updatedAt=LocalDateTime.now();
     }
+    protected User(){}
 
     public long getId() {
         return id;
@@ -65,6 +70,7 @@ public class User {
     public void setUpdatedAt(LocalDateTime updatedAt) {
         this.updatedAt = updatedAt;
     }
+
 
     @Override
     public boolean equals(Object o) {
