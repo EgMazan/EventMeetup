@@ -1,10 +1,8 @@
 spring:
+  profiles:
+    active: local
   application:
     name: EventMeetup
-  datasource:
-    url: jdbc:postgresql://localhost:5432/eventmeetup
-    username: eventmeetup
-    password: eventmeetup
   jpa:
     hibernate:
       ddl-auto: validate
