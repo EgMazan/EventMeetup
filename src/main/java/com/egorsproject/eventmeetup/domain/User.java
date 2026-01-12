@@ -1,11 +1,12 @@
 package com.egorsproject.eventmeetup.domain;
 
 import jakarta.persistence.*;
+
 import java.time.Instant;
 import java.util.Objects;
 
 @Entity
-@Table(name="users")
+@Table(name = "users")
 public class User {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
@@ -57,12 +58,12 @@ public class User {
     public boolean equals(Object o) {
         if (this == o) return true;
         if (!(o instanceof User user)) return false;
-        return getId() == user.getId() && getEmail().equals(user.getEmail()) && getName().equals(user.getName()) && getCreatedAt().equals(user.getCreatedAt()) && getUpdatedAt().equals(user.getUpdatedAt());
+        return getId() == user.getId();
     }
 
     @Override
     public int hashCode() {
-        return Objects.hash(getId(), getEmail(), getName(), getCreatedAt(), getUpdatedAt());
+        return Objects.hash(getId());
     }
 }
 
