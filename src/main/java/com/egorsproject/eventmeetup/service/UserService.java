@@ -1,8 +1,13 @@
 package com.egorsproject.eventmeetup.service;
 
+import com.egorsproject.eventmeetup.domain.User;
 import com.egorsproject.eventmeetup.dto.UserDto;
 import com.egorsproject.eventmeetup.mapper.UserMapper;
 import com.egorsproject.eventmeetup.repository.UserRepository;
+import org.springframework.data.domain.Page;
+import org.springframework.data.domain.PageRequest;
+import org.springframework.data.domain.Pageable;
+import org.springframework.data.domain.Sort;
 import org.springframework.stereotype.Service;
 
 import java.util.List;
@@ -17,7 +22,10 @@ public class UserService {
         this.userMapper = userMapper;
     }
 
-    public List<UserDto> getAllUsers() {
+    public List<UserDto> getAllUsers(int page, int size, String sortBy, String sortDir) {
+        Sort sort = sortDir.equalsIgnoreCase("desk") ? Sort.by(sortBy).descending() : Sort.by(sortBy);
+        Pageable pageable = PageRequest.of(page,size,sort);
+        Page<User> userPage = userRepository.findAll(pageable);
         return userRepository.findAll().stream().map(userMapper::toDto).toList();
     }
 }
