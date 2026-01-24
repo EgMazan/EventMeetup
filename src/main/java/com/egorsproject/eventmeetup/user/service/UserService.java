@@ -1,9 +1,9 @@
-package com.egorsproject.eventmeetup.service;
+package com.egorsproject.eventmeetup.user.service;
 
-import com.egorsproject.eventmeetup.domain.User;
-import com.egorsproject.eventmeetup.dto.UserDto;
-import com.egorsproject.eventmeetup.mapper.UserMapper;
-import com.egorsproject.eventmeetup.repository.UserRepository;
+import com.egorsproject.eventmeetup.user.domain.User;
+import com.egorsproject.eventmeetup.user.dto.UserDto;
+import com.egorsproject.eventmeetup.user.mapper.UserMapper;
+import com.egorsproject.eventmeetup.user.repository.UserRepository;
 import org.springframework.data.domain.Page;
 import org.springframework.data.domain.PageRequest;
 import org.springframework.data.domain.Pageable;

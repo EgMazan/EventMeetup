@@ -1,7 +1,7 @@
-package com.egorsproject.eventmeetup.mapper;
+package com.egorsproject.eventmeetup.user.mapper;
 
-import com.egorsproject.eventmeetup.domain.User;
-import com.egorsproject.eventmeetup.dto.UserDto;
+import com.egorsproject.eventmeetup.user.domain.User;
+import com.egorsproject.eventmeetup.user.dto.UserDto;
 import org.springframework.stereotype.Component;
 
 @Component

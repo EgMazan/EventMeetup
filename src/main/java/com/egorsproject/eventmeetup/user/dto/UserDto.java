@@ -1,4 +1,4 @@
-package com.egorsproject.eventmeetup.dto;
+package com.egorsproject.eventmeetup.user.dto;
 
 import java.time.Instant;
 

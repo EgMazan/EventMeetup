@@ -1,4 +1,4 @@
-package com.egorsproject.eventmeetup.domain;
+package com.egorsproject.eventmeetup.user.domain;
 
 import jakarta.persistence.*;
 

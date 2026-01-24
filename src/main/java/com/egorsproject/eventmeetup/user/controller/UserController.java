@@ -1,7 +1,7 @@
-package com.egorsproject.eventmeetup.controller;
+package com.egorsproject.eventmeetup.user.controller;
 
-import com.egorsproject.eventmeetup.dto.UserDto;
-import com.egorsproject.eventmeetup.service.UserService;
+import com.egorsproject.eventmeetup.user.dto.UserDto;
+import com.egorsproject.eventmeetup.user.service.UserService;
 import org.slf4j.LoggerFactory;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.GetMapping;
