@@ -31,7 +31,14 @@ public class User {
         updatedAt = Instant.now();
     }
 
-    protected User() {
+    public User() {
+    }
+    public void setEmail(String email) {
+        this.email = email;
+    }
+
+    public void setName(String name) {
+        this.name = name;
     }
 
     public long getId() {

@@ -1,6 +1,7 @@
 package com.egorsproject.eventmeetup.user.service;
 
 import com.egorsproject.eventmeetup.user.domain.User;
+import com.egorsproject.eventmeetup.user.dto.CreateUserRequest;
 import com.egorsproject.eventmeetup.user.dto.UserDto;
 import com.egorsproject.eventmeetup.user.mapper.UserMapper;
 import com.egorsproject.eventmeetup.user.repository.UserRepository;
@@ -27,5 +28,15 @@ public class UserService {
         Pageable pageable = PageRequest.of(page,size,sort);
         Page<User> userPage = userRepository.findAll(pageable);
         return userPage.getContent().stream().map(userMapper::toDto).toList();
+    }
+    public UserDto createUser(CreateUserRequest request){
+        if (userRepository.existsByEmail(request.getEmail())){
+            throw new IllegalArgumentException (
+                    "User with email already exists: " + request.getEmail()
+            );
+        }
+        User user = userMapper.toEntity(request);
+        User savedUser = userRepository.save(user);
+        return userMapper.toDto(savedUser);
     }
 }

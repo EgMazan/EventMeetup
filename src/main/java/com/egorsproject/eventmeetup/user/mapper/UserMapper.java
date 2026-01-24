@@ -1,6 +1,7 @@
 package com.egorsproject.eventmeetup.user.mapper;
 
 import com.egorsproject.eventmeetup.user.domain.User;
+import com.egorsproject.eventmeetup.user.dto.CreateUserRequest;
 import com.egorsproject.eventmeetup.user.dto.UserDto;
 import org.springframework.stereotype.Component;
 
@@ -14,5 +15,11 @@ public class UserMapper {
                 user.getCreatedAt(),
                 user.getUpdatedAt()
         );
+    }
+    public User toEntity(CreateUserRequest request){
+        User user = new User();
+        user.setEmail(request.getEmail());
+        user.setName(request.getName());
+        return user;
     }
 }
