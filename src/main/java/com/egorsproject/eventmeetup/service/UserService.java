@@ -23,9 +23,9 @@ public class UserService {
     }
 
     public List<UserDto> getAllUsers(int page, int size, String sortBy, String sortDir) {
-        Sort sort = sortDir.equalsIgnoreCase("desk") ? Sort.by(sortBy).descending() : Sort.by(sortBy);
+        Sort sort = sortDir.equalsIgnoreCase("desc") ? Sort.by(sortBy).descending() : Sort.by(sortBy);
         Pageable pageable = PageRequest.of(page,size,sort);
         Page<User> userPage = userRepository.findAll(pageable);
-        return userRepository.findAll().stream().map(userMapper::toDto).toList();
+        return userPage.getContent().stream().map(userMapper::toDto).toList();
     }
 }
