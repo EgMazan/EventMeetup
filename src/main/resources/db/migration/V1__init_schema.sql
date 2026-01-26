@@ -5,10 +5,10 @@ CREATE TABLE users(
     created_at timestamptz  NOT NULL DEFAULT now(),
     updated_at timestamptz  NOT NULL DEFAULT now()
 );
-INSERT INTO users(id, email, name, created_at, updated_at)
-VALUES (1,'test1mail.com','user1',now(),now()),
-       (2,'test2mail.com','user2',now(),now()),
-       (3,'test3mail.com','user3',now(),now());
+INSERT INTO users(email, name)
+VALUES ('test1mail.com','user1'),
+       ('test2mail.com','user2'),
+       ('test3mail.com','user3');
 
 
 
