@@ -40,7 +40,20 @@ public class UserController {
     @PostMapping
     public ResponseEntity<UserDto> create(
             @Valid @RequestBody CreateUserRequest request){
+        log.info("Post /api/users was called");
         UserDto createdUser = userService.createUser(request);
         return ResponseEntity.status(HttpStatus.CREATED).body(createdUser);
+    }
+    @DeleteMapping("/{id}")
+    public ResponseEntity<Void> deleteUser(@PathVariable Long id){
+        log.info("Delete /api/users/{} called", id);
+        try {
+            userService.deleteUser(id);
+            return ResponseEntity.noContent().build();
+        }
+        catch(IllegalArgumentException e){
+            log.warn("User not found {} ", id);
+            return ResponseEntity.notFound().build();
+        }
     }
 }

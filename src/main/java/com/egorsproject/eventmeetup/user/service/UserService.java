@@ -39,4 +39,10 @@ public class UserService {
         User savedUser = userRepository.save(user);
         return userMapper.toDto(savedUser);
     }
+    public void deleteUser(Long id){
+        if(!userRepository.existsById(id)){
+            throw new IllegalArgumentException("User with id: "+id+" not found");
+        }
+        userRepository.deleteById(id);
+    }
 }
