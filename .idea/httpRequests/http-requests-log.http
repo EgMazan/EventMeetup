@@ -1,3 +1,62 @@
+GET http://localhost:80/api/users/5
+Proxy-Connection: Keep-Alive
+User-Agent: Apache-HttpClient/4.5.13 (Java/17.0.6)
+Accept-Encoding: br,deflate,gzip,x-gzip
+
+<> 2026-02-02T151929.400.json
+
+###
+
+GET http://localhost:80/api/users/5
+Proxy-Connection: Keep-Alive
+User-Agent: Apache-HttpClient/4.5.13 (Java/17.0.6)
+Accept-Encoding: br,deflate,gzip,x-gzip
+
+<> 2026-02-02T151926.400.json
+
+###
+
+GET http://localhost:80/api/users/2
+Proxy-Connection: Keep-Alive
+User-Agent: Apache-HttpClient/4.5.13 (Java/17.0.6)
+Accept-Encoding: br,deflate,gzip,x-gzip
+
+<> 2026-02-02T151914.200.json
+
+###
+
+PUT http://localhost:80/api/users/2
+Content-Type: application/json
+Content-Length: 47
+Proxy-Connection: Keep-Alive
+User-Agent: Apache-HttpClient/4.5.13 (Java/17.0.6)
+Accept-Encoding: br,deflate,gzip,x-gzip
+
+{
+  "email": "put2mail.com",
+  "name": "put3"
+}
+
+<> 2026-02-02T150549.400.json
+
+###
+
+PUT http://localhost:80/api/users/2
+Content-Type: application/json
+Content-Length: 47
+Proxy-Connection: Keep-Alive
+User-Agent: Apache-HttpClient/4.5.13 (Java/17.0.6)
+Accept-Encoding: br,deflate,gzip,x-gzip
+
+{
+  "email": "put2mail.com",
+  "name": "put3"
+}
+
+<> 2026-02-02T150403.400.json
+
+###
+
 PUT http://localhost:80/api/users/100
 Content-Type: application/json
 Content-Length: 48

@@ -56,4 +56,8 @@ public class UserService {
         User updateUser = userRepository.save(user);
         return userMapper.toDto(updateUser);
     }
+    public UserDto getUserById(Long id){
+        User user = userRepository.findById(id).orElseThrow(()-> new IllegalArgumentException("User with id "+id+" not found"));
+        return userMapper.toDto(user);
+    }
 }

@@ -59,4 +59,10 @@ public class UserController {
         UserDto updatedUser = userService.updateUser(id, request);
         return ResponseEntity.ok(updatedUser);
     }
+    @GetMapping("/{id}")
+    public ResponseEntity<UserDto> getUser(@PathVariable Long id){
+        log.info("Get /api/users/{} called", id);
+        UserDto user = userService.getUserById(id);
+        return ResponseEntity.ok(user);
+    }
 }
