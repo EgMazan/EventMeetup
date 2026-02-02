@@ -1,6 +1,7 @@
 package com.egorsproject.eventmeetup.user.controller;
 
 import com.egorsproject.eventmeetup.user.dto.CreateUserRequest;
+import com.egorsproject.eventmeetup.user.dto.UpdateUserRequest;
 import com.egorsproject.eventmeetup.user.dto.UserDto;
 import com.egorsproject.eventmeetup.user.service.UserService;
 import jakarta.validation.Valid;
@@ -53,6 +54,18 @@ public class UserController {
         }
         catch(IllegalArgumentException e){
             log.warn("User not found {} ", id);
+            return ResponseEntity.notFound().build();
+        }
+    }
+    @PutMapping("/{id}")
+    public ResponseEntity<UserDto> updateUser(
+            @PathVariable Long id,
+            @Valid @RequestBody UpdateUserRequest request){
+        log.info("Put /api/users/{} called" , id);
+        try {
+            UserDto updatedUser = userService.updateUser(id, request);
+            return ResponseEntity.ok(updatedUser);
+        }catch (IllegalArgumentException e){
             return ResponseEntity.notFound().build();
         }
     }

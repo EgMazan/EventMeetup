@@ -2,6 +2,7 @@ package com.egorsproject.eventmeetup.user.service;
 
 import com.egorsproject.eventmeetup.user.domain.User;
 import com.egorsproject.eventmeetup.user.dto.CreateUserRequest;
+import com.egorsproject.eventmeetup.user.dto.UpdateUserRequest;
 import com.egorsproject.eventmeetup.user.dto.UserDto;
 import com.egorsproject.eventmeetup.user.mapper.UserMapper;
 import com.egorsproject.eventmeetup.user.repository.UserRepository;
@@ -44,5 +45,15 @@ public class UserService {
             throw new IllegalArgumentException("User with id: "+id+" not found");
         }
         userRepository.deleteById(id);
+    }
+    public UserDto updateUser(Long id, UpdateUserRequest request){
+        User user = userRepository.findById(id).orElseThrow(()-> new IllegalArgumentException("User with id " + id +" not found"));
+        if(!user.getEmail().equals(request.getEmail()) && userRepository.existsByEmail(request.getEmail())) {
+            throw new IllegalArgumentException("User with email already exists"+ request.getEmail());
+        }
+        user.setName(request.getName());
+        user.setEmail(request.getEmail());
+        User updateUser = userRepository.save(user);
+        return userMapper.toDto(updateUser);
     }
 }
