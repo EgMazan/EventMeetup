@@ -1,0 +1,495 @@
+PUT http://localhost:80/api/users/100
+Content-Type: application/json
+Content-Length: 48
+Proxy-Connection: Keep-Alive
+User-Agent: Apache-HttpClient/4.5.13 (Java/17.0.6)
+Accept-Encoding: br,deflate,gzip,x-gzip
+
+{
+  "email": "put2@mail.com",
+  "name": "put3"
+}
+
+<> 2026-02-02T150055.400.json
+
+###
+
+PUT http://localhost:80/api/users/100
+Content-Type: application/json
+Content-Length: 48
+Proxy-Connection: Keep-Alive
+User-Agent: Apache-HttpClient/4.5.13 (Java/17.0.6)
+Accept-Encoding: br,deflate,gzip,x-gzip
+
+{
+  "email": "put2@mail.com",
+  "name": "put3"
+}
+
+<> 2026-02-02T150052.400.json
+
+###
+
+PUT http://localhost:80/api/users/3
+Content-Type: application/json
+Content-Length: 48
+Proxy-Connection: Keep-Alive
+User-Agent: Apache-HttpClient/4.5.13 (Java/17.0.6)
+Accept-Encoding: br,deflate,gzip,x-gzip
+
+{
+  "email": "put2@mail.com",
+  "name": "put3"
+}
+
+<> 2026-02-02T150013.400.json
+
+###
+
+GET http://localhost:80/api/users
+Proxy-Connection: Keep-Alive
+User-Agent: Apache-HttpClient/4.5.13 (Java/17.0.6)
+Accept-Encoding: br,deflate,gzip,x-gzip
+
+<> 2026-02-02T145957.200.json
+
+###
+
+PUT http://localhost:80/api/users/3
+Content-Type: application/json
+Content-Length: 48
+Proxy-Connection: Keep-Alive
+User-Agent: Apache-HttpClient/4.5.13 (Java/17.0.6)
+Accept-Encoding: br,deflate,gzip,x-gzip
+
+{
+  "email": "put2@mail.com",
+  "name": "put3"
+}
+
+###
+
+PUT http://localhost:80/api/users/3
+Content-Type: application/json
+Content-Length: 48
+Proxy-Connection: Keep-Alive
+User-Agent: Apache-HttpClient/4.5.13 (Java/17.0.6)
+Accept-Encoding: br,deflate,gzip,x-gzip
+
+{
+  "email": "put2@mail.com",
+  "name": "put3"
+}
+
+###
+
+PUT http://localhost:80/api/users/3
+Content-Type: application/json
+Content-Length: 48
+Proxy-Connection: Keep-Alive
+User-Agent: Apache-HttpClient/4.5.13 (Java/17.0.6)
+Accept-Encoding: br,deflate,gzip,x-gzip
+
+{
+  "email": "put2@mail.com",
+  "name": "put3"
+}
+
+###
+
+GET http://localhost:80/api/users
+Proxy-Connection: Keep-Alive
+User-Agent: Apache-HttpClient/4.5.13 (Java/17.0.6)
+Accept-Encoding: br,deflate,gzip,x-gzip
+
+<> 2026-02-02T142905.200.json
+
+###
+
+PUT http://localhost:80/api/users/2
+Content-Type: application/json
+Content-Length: 48
+Proxy-Connection: Keep-Alive
+User-Agent: Apache-HttpClient/4.5.13 (Java/17.0.6)
+Accept-Encoding: br,deflate,gzip,x-gzip
+
+{
+  "email": "put2@mail.com",
+  "name": "put1"
+}
+
+<> 2026-02-02T142829.200.json
+
+###
+
+PUT http://localhost:80/api/users/2
+Content-Type: application/json
+Content-Length: 47
+Proxy-Connection: Keep-Alive
+User-Agent: Apache-HttpClient/4.5.13 (Java/17.0.6)
+Accept-Encoding: br,deflate,gzip,x-gzip
+
+{
+  "email": "put2mail.com",
+  "name": "put1"
+}
+
+<> 2026-02-02T142644.400.json
+
+###
+
+GET http://localhost:80/api/users
+Proxy-Connection: Keep-Alive
+User-Agent: Apache-HttpClient/4.5.13 (Java/17.0.6)
+Accept-Encoding: br,deflate,gzip,x-gzip
+
+<> 2026-02-02T142631.200.json
+
+###
+
+PUT http://localhost:80/api/users/2
+Content-Type: application/json
+Content-Length: 47
+Proxy-Connection: Keep-Alive
+User-Agent: Apache-HttpClient/4.5.13 (Java/17.0.6)
+Accept-Encoding: br,deflate,gzip,x-gzip
+
+{
+  "email": "put2mail.com",
+  "name": "put1"
+}
+
+<> 2026-02-02T142606.400.json
+
+###
+
+PUT http://localhost:80/api/users/2
+Content-Type: application/json
+Content-Length: 47
+Proxy-Connection: Keep-Alive
+User-Agent: Apache-HttpClient/4.5.13 (Java/17.0.6)
+Accept-Encoding: br,deflate,gzip,x-gzip
+
+{
+  "email": "put2mail.com",
+  "name": "put1"
+}
+
+<> 2026-02-02T142601.400.json
+
+###
+
+GET http://localhost:80/api/users
+Proxy-Connection: Keep-Alive
+User-Agent: Apache-HttpClient/4.5.13 (Java/17.0.6)
+Accept-Encoding: br,deflate,gzip,x-gzip
+
+<> 2026-02-02T142514.200.json
+
+###
+
+PUT http://localhost:80/api/users/1
+Content-Type: application/json
+Content-Length: 47
+Proxy-Connection: Keep-Alive
+User-Agent: Apache-HttpClient/4.5.13 (Java/17.0.6)
+Accept-Encoding: br,deflate,gzip,x-gzip
+
+{
+  "email": "put2mail.com",
+  "name": "put1"
+}
+
+<> 2026-02-02T142500.400.json
+
+###
+
+PUT http://localhost:80/api/users/1
+Content-Type: application/json
+Content-Length: 47
+Proxy-Connection: Keep-Alive
+User-Agent: Apache-HttpClient/4.5.13 (Java/17.0.6)
+Accept-Encoding: br,deflate,gzip,x-gzip
+
+{
+  "email": "put2mail.com",
+  "name": "put1"
+}
+
+<> 2026-02-02T142456.400.json
+
+###
+
+PUT http://localhost:80/api/users/1
+Content-Type: application/json
+Content-Length: 47
+Proxy-Connection: Keep-Alive
+User-Agent: Apache-HttpClient/4.5.13 (Java/17.0.6)
+Accept-Encoding: br,deflate,gzip,x-gzip
+
+{
+  "name": "put1",
+  "email": "put2mail.com"
+}
+
+<> 2026-02-02T142412.400.json
+
+###
+
+PUT http://localhost:80/api/users/1
+Content-Type: application/json
+Content-Length: 48
+Proxy-Connection: Keep-Alive
+User-Agent: Apache-HttpClient/4.5.13 (Java/17.0.6)
+Accept-Encoding: br,deflate,gzip,x-gzip
+
+{
+  "name": "put1",
+  "email": "test2mail.com"
+}
+
+<> 2026-02-02T142327.400.json
+
+###
+
+PUT http://localhost:80/api/users/1
+Content-Type: application/json
+Content-Length: 48
+Proxy-Connection: Keep-Alive
+User-Agent: Apache-HttpClient/4.5.13 (Java/17.0.6)
+Accept-Encoding: br,deflate,gzip,x-gzip
+
+{
+  "name": "put1",
+  "email": "test2mail.com"
+}
+
+<> 2026-02-02T142321.400.json
+
+###
+
+PUT http://localhost:80/api/users/1
+Content-Type: application/json
+Content-Length: 48
+Proxy-Connection: Keep-Alive
+User-Agent: Apache-HttpClient/4.5.13 (Java/17.0.6)
+Accept-Encoding: br,deflate,gzip,x-gzip
+
+{
+  "name": "put1",
+  "email": "test2mail.com"
+}
+
+<> 2026-02-02T142254.400.json
+
+###
+
+GET http://localhost:80/api/users
+Proxy-Connection: Keep-Alive
+User-Agent: Apache-HttpClient/4.5.13 (Java/17.0.6)
+Accept-Encoding: br,deflate,gzip,x-gzip
+
+<> 2026-02-02T142225.200.json
+
+###
+
+PUT http://localhost:80/api/users/1
+Content-Type: application/json
+Content-Length: 48
+Proxy-Connection: Keep-Alive
+User-Agent: Apache-HttpClient/4.5.13 (Java/17.0.6)
+Accept-Encoding: br,deflate,gzip,x-gzip
+
+{
+  "name": "put1",
+  "email": "put1@mail.com"
+}
+
+###
+
+PUT http://localhost:80/api/users/1
+Content-Type: application/json
+Content-Length: 48
+Proxy-Connection: Keep-Alive
+User-Agent: Apache-HttpClient/4.5.13 (Java/17.0.6)
+Accept-Encoding: br,deflate,gzip,x-gzip
+
+{
+  "email": "put1@mail.com",
+  "name": "put1"
+}
+
+###
+
+GET http://localhost:80/api/users
+Proxy-Connection: Keep-Alive
+User-Agent: Apache-HttpClient/4.5.13 (Java/17.0.6)
+Accept-Encoding: br,deflate,gzip,x-gzip
+
+<> 2026-01-26T185627.200.json
+
+###
+
+DELETE http://localhost:80/api/users/5
+Proxy-Connection: Keep-Alive
+User-Agent: Apache-HttpClient/4.5.13 (Java/17.0.6)
+Accept-Encoding: br,deflate,gzip,x-gzip
+
+###
+
+GET http://localhost:80/api/users
+Proxy-Connection: Keep-Alive
+User-Agent: Apache-HttpClient/4.5.13 (Java/17.0.6)
+Accept-Encoding: br,deflate,gzip,x-gzip
+
+<> 2026-01-26T185551.200.json
+
+###
+
+DELETE http://localhost:80/api/users/6
+Proxy-Connection: Keep-Alive
+User-Agent: Apache-HttpClient/4.5.13 (Java/17.0.6)
+Accept-Encoding: br,deflate,gzip,x-gzip
+
+###
+
+DELETE http://localhost:80/api/users/7
+Proxy-Connection: Keep-Alive
+User-Agent: Apache-HttpClient/4.5.13 (Java/17.0.6)
+Accept-Encoding: br,deflate,gzip,x-gzip
+
+###
+
+POST http://localhost:80/api/users
+Content-Type: application/json
+Content-Length: 50
+Proxy-Connection: Keep-Alive
+User-Agent: Apache-HttpClient/4.5.13 (Java/17.0.6)
+Accept-Encoding: br,deflate,gzip,x-gzip
+
+{
+  "email": "test7@mail.com",
+  "name": "test7"
+}
+
+<> 2026-01-26T185352.201.json
+
+###
+
+DELETE http://localhost:80/api/users/1
+Proxy-Connection: Keep-Alive
+User-Agent: Apache-HttpClient/4.5.13 (Java/17.0.6)
+Accept-Encoding: br,deflate,gzip,x-gzip
+
+###
+
+DELETE http://localhost:80/api/users/1
+Proxy-Connection: Keep-Alive
+User-Agent: Apache-HttpClient/4.5.13 (Java/17.0.6)
+Accept-Encoding: br,deflate,gzip,x-gzip
+
+###
+
+DELETE http://localhost:80/api/users/1
+Proxy-Connection: Keep-Alive
+User-Agent: Apache-HttpClient/4.5.13 (Java/17.0.6)
+Accept-Encoding: br,deflate,gzip,x-gzip
+
+###
+
+POST http://localhost:8080/api/users
+Content-Type: application/json
+Content-Length: 49
+Proxy-Connection: Keep-Alive
+User-Agent: Apache-HttpClient/4.5.13 (Java/17.0.6)
+Accept-Encoding: br,deflate,gzip,x-gzip
+
+{
+  "email": "test@mail.com",
+  "name": "test6"
+}
+
+<> 2026-01-26T132928.500.json
+
+###
+
+POST http://localhost:8080/api/users
+Content-Type: application/json
+Content-Length: 49
+Proxy-Connection: Keep-Alive
+User-Agent: Apache-HttpClient/4.5.13 (Java/17.0.6)
+Accept-Encoding: br,deflate,gzip,x-gzip
+
+{
+  "email": "test@mail.com",
+  "name": "test6"
+}
+
+<> 2026-01-26T132847.500.json
+
+###
+
+POST http://localhost:8080/api/users
+Content-Type: application/json
+Content-Length: 49
+Proxy-Connection: Keep-Alive
+User-Agent: Apache-HttpClient/4.5.13 (Java/17.0.6)
+Accept-Encoding: br,deflate,gzip,x-gzip
+
+{
+  "email": "test@mail.com",
+  "name": "test5"
+}
+
+<> 2026-01-26T132744.500.json
+
+###
+
+POST http://localhost:8080/api/users
+Content-Type: application/json
+Content-Length: 50
+Proxy-Connection: Keep-Alive
+User-Agent: Apache-HttpClient/4.5.13 (Java/17.0.6)
+Accept-Encoding: br,deflate,gzip,x-gzip
+
+{
+  "email": "test5@mail.com",
+  "name": "test5"
+}
+
+<> 2026-01-26T132723.201.json
+
+###
+
+POST http://localhost:8080/api/users
+Content-Type: application/json
+Content-Length: 48
+Proxy-Connection: Keep-Alive
+User-Agent: Apache-HttpClient/4.5.13 (Java/17.0.6)
+Accept-Encoding: br,deflate,gzip,x-gzip
+
+{
+  "email": "test@mail.com",
+  "name": "Alex"
+}
+
+<> 2026-01-26T130727.201.json
+
+###
+
+POST http://localhost:8080/api/users
+Content-Type: application/json
+Content-Length: 48
+Proxy-Connection: Keep-Alive
+User-Agent: Apache-HttpClient/4.5.13 (Java/17.0.6)
+Accept-Encoding: br,deflate,gzip,x-gzip
+
+{
+  "email": "test@mail.com",
+  "name": "Alex"
+}
+
+<> 2026-01-26T125931.500.json
+
+###
+

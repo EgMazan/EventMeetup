@@ -48,25 +48,15 @@ public class UserController {
     @DeleteMapping("/{id}")
     public ResponseEntity<Void> deleteUser(@PathVariable Long id){
         log.info("Delete /api/users/{} called", id);
-        try {
-            userService.deleteUser(id);
-            return ResponseEntity.noContent().build();
-        }
-        catch(IllegalArgumentException e){
-            log.warn("User not found {} ", id);
-            return ResponseEntity.notFound().build();
-        }
+        userService.deleteUser(id);
+        return ResponseEntity.noContent().build();
     }
     @PutMapping("/{id}")
     public ResponseEntity<UserDto> updateUser(
             @PathVariable Long id,
             @Valid @RequestBody UpdateUserRequest request){
         log.info("Put /api/users/{} called" , id);
-        try {
-            UserDto updatedUser = userService.updateUser(id, request);
-            return ResponseEntity.ok(updatedUser);
-        }catch (IllegalArgumentException e){
-            return ResponseEntity.notFound().build();
-        }
+        UserDto updatedUser = userService.updateUser(id, request);
+        return ResponseEntity.ok(updatedUser);
     }
 }
