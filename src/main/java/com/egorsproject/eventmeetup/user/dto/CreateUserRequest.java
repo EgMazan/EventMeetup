@@ -11,6 +11,10 @@ public class CreateUserRequest {
 
     @NotBlank
     private String name;
+    public CreateUserRequest(String name, String email) {
+        this.name = name;
+        this.email = email;
+    }
 
     public String getEmail() {
         return email;
